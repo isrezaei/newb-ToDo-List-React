@@ -1,0 +1,245 @@
+@import "TodoResponsev.css";
+
+html{
+    background-color: rgb(255, 248, 248);;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: JosefinSans;
+    src: url("../Font/JosefinSans.ttf");
+}
+
+
+body{
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+    font-family: 'JosefinSans';
+}
+
+::-webkit-scrollbar{
+    width: 0rem;
+}
+
+.ParentToDo{
+    width: 90%;
+    height: 55vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transform: translateY(-10%);
+    background-color: #efe8e8;
+    padding: 0 0 1rem 0;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.ParentAddTask{
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6dc4bb;
+}
+
+.InputTask{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.InputTask input{
+    width: 70%;
+    height: 3rem;
+    outline: none;
+    text-align: left;
+    font-size: 18px;
+    border: none;
+    border-radius: 0;
+    padding: .5rem;
+    box-sizing: border-box;
+    background: rgba( 255, 255, 255, 0.60 );
+    backdrop-filter: blur( 3.0px );
+    -webkit-backdrop-filter: blur( 3.0px );
+}
+
+.InputTask input::placeholder{
+    margin-left: 1rem;
+    font-family: JosefinSans;
+}
+
+.InputTask button{
+    width: 3rem;
+    height: 3rem;
+    outline: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba( 0, 0, 0, 0.40 );
+    backdrop-filter: blur( 3.0px );
+    -webkit-backdrop-filter: blur( 3.0px );
+}
+
+.InputEdit{
+    width: 100%;
+    text-align: left;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #009faf;
+    font-family: JosefinSans;
+    cursor: pointer;
+}
+
+.ShowTask{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.Tasks{
+    width: 95%;
+    min-height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(94,94,94,0.1);
+    box-shadow: 0px 0px 5px 0px rgba(94,94,94,0.1);
+}
+
+.TextTask{
+    width: 100%;
+    min-height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-left: .5rem;
+    padding: .5rem 0;
+    box-sizing: border-box;
+    color: #484848;
+}
+
+.ColorTask{
+    width: 1rem;
+    min-height: 5rem;
+    background-color: #b2ecb2;
+    transition: .3s;
+}
+
+.TextTask :nth-child(2){
+    width: 100%;
+    margin-left: .5rem;
+    overflow: hidden;
+}
+
+.BTNContorls{
+    width: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: .5rem;
+}
+.BTNContorls button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    margin: .25rem;
+    transform: translateX(10px);
+    background: linear-gradient(145deg, #d8d8d8, #ffffff);
+    box-shadow:  5px 5px 24px #cacaca,
+    -5px -5px 24px #ffffff;
+    cursor: pointer;
+}
+.BTNContorls :nth-child(3){
+/***** For Done Btn *****/
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translate(7px, -29px);
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.ParentInput{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-1rem);
+}
+
+.DataSection{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Day{
+    width: 40%;
+    text-align: right;
+    transform: translate(-1px, 16px);
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.DMY{
+    width: 40%;
+}
+
+.DMY :nth-child(1){
+    width: 30%;
+    transform: translateY(20px);
+    font-size: 50px;
+    font-weight: 700;
+    color: #484848;
+}
+
+.DMY :nth-child(2){
+    width: 30%;
+    transform: translate(4rem , -1.7rem);
+    font-size: 33px;
+    color: #ffffff;
+}
+
+.DMY :nth-child(3){
+    width: 30%;
+    font-size: 20px;
+    color: #ffffff;
+    transform: translate(4rem, -1.5rem);
+}
+
+.DMY :nth-child(4){
+    width: 30%;
+    transform: translate(22rem, -43px);
+}
+
+.DoingTask{
+    background-color:#ff8a65;
+    transition: .3s;
+}
+
+.TickColor{
+    color:#8bc34a!important; ;
+    transition: .3s;
+}
